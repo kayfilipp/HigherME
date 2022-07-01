@@ -79,13 +79,15 @@ Sub main()
     'point our selenium object at our chrome location and make the selenium obj invisible during runtime
     driver.SetBinary ("C:\Program Files\Google\Chrome\Application\chrome.exe")
     driver.AddArgument "--headless"
-    
-    'start timing 
-    Start = Now
 
     'log into linkedin 
     driver.Start
-    Call logIntoLinkedIn(driver, "kayfilipp@gmail.com", "Kargan011!")
+    username = inputbox("please enter linkedin Username:")
+    password = inputbox("please enter linkedin Password:")
+    Call logIntoLinkedIn(driver, username, password)
+
+    'start timing 
+    Start = Now
 
     'let's collect some terms!
     call paginateSearchTerm(driver,oFile,"analyst",2000,1,10)
