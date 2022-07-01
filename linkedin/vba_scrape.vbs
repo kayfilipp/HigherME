@@ -100,6 +100,12 @@ Sub main()
     ' call paginateSearchTerm(driver,oFile,"codingdojo",2000,1,100)
     ' call paginateSearchTerm(driver,oFile,"engineer",2000,1,100)
     call paginateSearchTerm(driver,oFile,"business analyst",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"amateur programmer",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"data engineer",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"tech enthusiast",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"software engineer",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"marketing analyst",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"social science",2000,1,100)
 
     'how long it took us to get all these
     wscript.echo "Total runtime (Seconds):"
