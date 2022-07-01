@@ -30,6 +30,8 @@ End Function
 'given some keyword, iterate over people and return a collection of URLs
 sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,endPage) 
     
+    wscript.echo "now pulling results for keyword: "+keyword 
+
     For i = startPage To endPage
         'generate our URL
         searchTermUrl = createPeopleSearch(keyword, i)
@@ -40,11 +42,12 @@ sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,endPage)
 
         'create a container for search results
         Set SearchObjs = driver.FindElementsByClass("entity-result__item")
+        wscript.echo "page "+cstr(i)+" , number of results: "+cstr(SearchObjs.count)
         
         'iterate over each result and print their URL - Note: some URLs will not be printed as many individuals have chosen to stay private.
         For Each obj In SearchObjs
             objURL = obj.FindElementByClass("app-aware-link").attribute("href")
-            fsoObj.WriteLine objURL 
+            fsoObj.WriteLine objURL + "," + keyword 
         Next
         
     Next
@@ -90,13 +93,13 @@ Sub main()
     Start = Now
 
     'let's collect some terms!
-    call paginateSearchTerm(driver,oFile,"analyst",2000,1,10)
-    call paginateSearchTerm(driver,oFile,"data scientist",2000,1,10)
-    call paginateSearchTerm(driver,oFile,"technology",2000,1,10)
-    call paginateSearchTerm(driver,oFile,"stem",2000,1,10)
-    call paginateSearchTerm(driver,oFile,"codingdojo",2000,1,10)
-    call paginateSearchTerm(driver,oFile,"engineer",2000,1,10)
-
+    ' call paginateSearchTerm(driver,oFile,"analyst",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"data scientist",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"technology",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"stem",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"codingdojo",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"engineer",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"business analyst",2000,1,100)
 
     'how long it took us to get all these
     wscript.echo "Total runtime (Seconds):"
