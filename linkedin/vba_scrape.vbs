@@ -87,7 +87,14 @@ Sub main()
     driver.Start
     Call logIntoLinkedIn(driver, "kayfilipp@gmail.com", "Kargan011!")
 
+    'let's collect some terms!
     call paginateSearchTerm(driver,oFile,"analyst",2000,1,10)
+    call paginateSearchTerm(driver,oFile,"data scientist",2000,1,10)
+    call paginateSearchTerm(driver,oFile,"technology",2000,1,10)
+    call paginateSearchTerm(driver,oFile,"stem",2000,1,10)
+    call paginateSearchTerm(driver,oFile,"codingdojo",2000,1,10)
+    call paginateSearchTerm(driver,oFile,"engineer",2000,1,10)
+
 
     'how long it took us to get all these
     wscript.echo "Total runtime (Seconds):"
