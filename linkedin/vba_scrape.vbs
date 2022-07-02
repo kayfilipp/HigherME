@@ -47,6 +47,7 @@ sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,endPage)
         'iterate over each result and print their URL - Note: some URLs will not be printed as many individuals have chosen to stay private.
         For Each obj In SearchObjs
             objURL = obj.FindElementByClass("app-aware-link").attribute("href")
+            wscript.echo objURL 
             fsoObj.WriteLine objURL + "," + keyword 
         Next
         
@@ -99,13 +100,17 @@ Sub main()
     ' call paginateSearchTerm(driver,oFile,"stem",2000,1,100)
     ' call paginateSearchTerm(driver,oFile,"codingdojo",2000,1,100)
     ' call paginateSearchTerm(driver,oFile,"engineer",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"business analyst",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"amateur programmer",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"data engineer",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"tech enthusiast",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"software engineer",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"marketing analyst",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"social science",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"business analyst",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"amateur programmer",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"data engineer",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"tech enthusiast",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"software engineer",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"marketing analyst",2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"social science",2000,1,100)
+    call paginateSearchTerm(driver,oFile,"community college", 2000,1,100)
+    call paginateSearchTerm(driver,oFile,"certificate program", 2000,1,100)
+    call paginateSearchTerm(driver,oFile,"coding certificate", 2000,1,100)
+    call paginateSearchTerm(driver,oFile,"looking for stem work", 2000,1,100)
 
     'how long it took us to get all these
     wscript.echo "Total runtime (Seconds):"
