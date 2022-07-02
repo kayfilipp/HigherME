@@ -10,7 +10,7 @@ A repository for the University of San Diego's HigherME Capstone project. This p
 2. [Linkedin Data Ingestion](#linkedin-data-ingestion)
 
 
-### Definitions and business understanding
+### Definitions and Business Understanding
 <ol>
   <li><b>Under-represented talent:</b> from a racial lens, this study examines individuals who are both non-white and non-asian such as Latino and Black applicants.</li>
   <li><b>Nontraditional Career Path:</b> a nontraditional career path in STEM involves engagement with one of the following criteria:
