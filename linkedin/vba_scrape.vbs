@@ -1,4 +1,4 @@
-'a subroutine that logs us into linkedin.
+'a Subroutine that logs us into linkedin.
 'if credentials are not supplied, an inputbox prompts us.
 
 Sub logIntoLinkedIn(driver, username, password)
@@ -6,10 +6,10 @@ Sub logIntoLinkedIn(driver, username, password)
     driver.Get "https://www.linkedin.com/login"
     
     'enter our credentials into the session key and the session password
-    driver.FindElementByName("session_key").SendKeys username
-    driver.FindElementByName("session_password").SendKeys password
+    driver.FindElementByName("session_key").SEndKeys username
+    driver.FindElementByName("session_password").SEndKeys password
     
-    'submit
+    'Submit
     call driver.FindElementByName("session_password").Submit
 
 End Sub
@@ -28,11 +28,11 @@ Function createPeopleSearch(keyword, page)
 End Function
 
 'given some keyword, iterate over people and return a collection of URLs
-sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,endPage) 
+Sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,EndPage) 
     
     wscript.echo "now pulling results for keyword: "+keyword 
 
-    For i = startPage To endPage
+    For i = startPage To EndPage
         'generate our URL
         searchTermUrl = createPeopleSearch(keyword, i)
         driver.Get (searchTermUrl)
@@ -53,7 +53,7 @@ sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,endPage)
         
     Next
 
-End sub
+End Sub
 
 'create a temporary read object of our file to get the amount of lines.
 function getFileLength(objFso,fileName)
@@ -63,7 +63,7 @@ function getFileLength(objFso,fileName)
     getFileLength = fileLengthTeller.Line
     fileLengthTeller.Close 
 
-end function 
+End function 
 
 'driver is located in: C:\Users\{fkrasovsky}\AppData\Local\SeleniumBasic
 
@@ -82,7 +82,7 @@ Sub main()
     'if the file exists already, write to it instead of creating it 
     if fso.fileExists(full_out_path) then 
         wscript.echo "output file exists already..."
-        wscript.echo "commencing writing operations through appending."
+        wscript.echo "commencing writing operations through appEnding."
         
         'Tell the user how big the file currently is
         wscript.echo "Current number of data points: "+cstr(getFileLength(fso,full_out_path))
@@ -91,7 +91,7 @@ Sub main()
     else 
         wscript.echo "creating output file..."
         set oFile = fso.CreateTextFile(full_out_path)
-    end if 
+    End if 
     
     set driver = CreateObject("Selenium.ChromeDriver")
     'point our selenium object at our chrome location and make the selenium obj invisible during runtime
