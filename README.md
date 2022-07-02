@@ -26,3 +26,4 @@ A repository for the University of San Diego's HigherME Capstone project. This p
 </ol>
 
 ### LinkedIn Data Ingestion 
+![image](https://user-images.githubusercontent.com/36943200/176986826-f3429546-7672-43f4-940b-52b1001431eb.png)
