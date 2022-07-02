@@ -5,12 +5,10 @@ A repository for the University of San Diego's HigherME Capstone project. This p
 
 ![image](https://user-images.githubusercontent.com/36943200/176986279-a98c4d81-9912-4310-85b7-fcf47295197a.png)
 
-[Business Understanding and Definitions](#definitions-and-business-understanding)
 ## Table of Contents 
-<ol>
-  <li>[Business Understanding and Definitions](#definitions-and-business-understanding)</li> 
-  <li>LinkedIn Data Ingestion</li> 
-</ol>
+1. [Business Understanding and Definitions](#definitions-and-business-understanding) 
+2. [Linkedin Data Ingestion](#linkedin-data-ingestion)
+
 
 ### Definitions and business understanding
 <ol>
