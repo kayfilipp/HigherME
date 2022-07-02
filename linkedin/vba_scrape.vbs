@@ -55,6 +55,16 @@ sub paginateSearchTerm(driver,fsoObj,keyword,sleeptime,startPage,endPage)
 
 End sub
 
+'create a temporary read object of our file to get the amount of lines.
+function getFileLength(objFso,fileName)
+    
+    Set fileLengthTeller = objFso.OpenTextFile(filename, 1)
+    fileLengthTeller.ReadAll
+    getFileLength = fileLengthTeller.Line
+    fileLengthTeller.Close 
+
+end function 
+
 'driver is located in: C:\Users\{fkrasovsky}\AppData\Local\SeleniumBasic
 
 Sub main()
@@ -73,6 +83,10 @@ Sub main()
     if fso.fileExists(full_out_path) then 
         wscript.echo "output file exists already..."
         wscript.echo "commencing writing operations through appending."
+        
+        'Tell the user how big the file currently is
+        wscript.echo "Current number of data points: "+cstr(getFileLength(fso,full_out_path))
+        
         set oFile = fso.OpenTextFile(full_out_path,8)
     else 
         wscript.echo "creating output file..."
@@ -107,10 +121,10 @@ Sub main()
     ' call paginateSearchTerm(driver,oFile,"software engineer",2000,1,100)
     ' call paginateSearchTerm(driver,oFile,"marketing analyst",2000,1,100)
     ' call paginateSearchTerm(driver,oFile,"social science",2000,1,100)
-    call paginateSearchTerm(driver,oFile,"community college", 2000,1,100)
-    call paginateSearchTerm(driver,oFile,"certificate program", 2000,1,100)
-    call paginateSearchTerm(driver,oFile,"coding certificate", 2000,1,100)
-    call paginateSearchTerm(driver,oFile,"looking for stem work", 2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"community college", 2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"certificate program", 2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"coding certificate", 2000,1,100)
+    ' call paginateSearchTerm(driver,oFile,"looking for stem work", 2000,1,100)
 
     'how long it took us to get all these
     wscript.echo "Total runtime (Seconds):"
@@ -118,6 +132,9 @@ Sub main()
 
     'shut down text file 
     oFile.Close 
+
+    'Tell the user how big the file currently is (again, after runtime)
+    wscript.echo "Current number of data points: "+cstr(getFileLength(fso,full_out_path))
 
     'shut down driver 
     driver.Quit
