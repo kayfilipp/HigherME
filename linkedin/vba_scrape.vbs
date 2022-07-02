@@ -127,13 +127,13 @@ Sub main()
     ' call paginateSearchTerm(driver,oFile,"looking for stem work", 2000,1,100)
 
     'how long it took us to get all these
-    wscript.echo "Total runtime (Seconds):"
-    wscript.echo DateDiff("s", Start, Now)
+    wscript.echo "Total runtime (minutes):"
+    wscript.echo DateDiff("m", Start, Now)
 
     'shut down text file 
     oFile.Close 
 
-    'Tell the user how big the file currently is (again, after runtime)
+    'Tell the user how big the file currently is (again, after scraping)
     wscript.echo "Current number of data points: "+cstr(getFileLength(fso,full_out_path))
 
     'shut down driver 
