@@ -82,7 +82,7 @@ Sub main()
     'if the file exists already, write to it instead of creating it 
     if fso.fileExists(full_out_path) then 
         wscript.echo "output file exists already..."
-        wscript.echo "commencing writing operations through appEnding."
+        wscript.echo "commencing writing operations through appending."
         
         'Tell the user how big the file currently is
         wscript.echo "Current number of data points: "+cstr(getFileLength(fso,full_out_path))
@@ -108,23 +108,10 @@ Sub main()
     Start = Now
 
     'let's collect some terms!
-    ' call paginateSearchTerm(driver,oFile,"analyst",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"data scientist",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"technology",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"stem",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"codingdojo",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"engineer",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"business analyst",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"amateur programmer",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"data engineer",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"tech enthusiast",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"software engineer",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"marketing analyst",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"social science",2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"community college", 2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"certificate program", 2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"coding certificate", 2000,1,100)
-    ' call paginateSearchTerm(driver,oFile,"looking for stem work", 2000,1,100)
+    '"Computer Science", "General Assembly","Galvanize","Bootcamp",
+    For Each term in Array("software developer","POC Stem","POC Developer")
+        call paginateSearchTerm(driver,oFile,term, 2000,1,100)
+    Next 
 
     'how long it took us to get all these
     wscript.echo "Total runtime (minutes):"
