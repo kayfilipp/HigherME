@@ -107,11 +107,11 @@ Sub main()
     'start timing 
     Start = Now
 
-    'let's collect some terms!
-    '"Computer Science", "General Assembly","Galvanize","Bootcamp",
-    For Each term in Array("software developer","POC Stem","POC Developer")
+    'collect user supplied terms.
+    terms = Array("Engineer","Data","Math","Scientist")
+    for each term in terms
         call paginateSearchTerm(driver,oFile,term, 2000,1,100)
-    Next 
+    next
 
     'how long it took us to get all these
     wscript.echo "Total runtime (minutes):"
