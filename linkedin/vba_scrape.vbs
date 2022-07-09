@@ -108,7 +108,8 @@ Sub main()
     Start = Now
 
     'collect user supplied terms.
-    terms = Array("Engineer","Data","Math","Scientist")
+    'terms = Array("Engineer","Data","Math","Scientist")
+    terms = Array("POC Data Scientist","minority business analyst","looking for developer work","looking for data work","data certificate student")
     for each term in terms
         call paginateSearchTerm(driver,oFile,term, 2000,1,100)
     next
