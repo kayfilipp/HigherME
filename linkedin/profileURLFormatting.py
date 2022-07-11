@@ -3,7 +3,6 @@
 # removes irrelevant URLs 
 # formats linkedin URLs 
 
-
 import pandas as pd 
 import os 
 
@@ -30,4 +29,9 @@ df = df[df['is_valid']=='True']
 df['url'] = df['url'].apply(lambda x: x.split("?")[0])
 
 #write to a text file using the .to_csv function.
-df.to_csv(out_file, header=None, index=None, sep=',')
+df.to_csv(
+    out_file, 
+    header=None, 
+    index=None, 
+    sep=','
+)
