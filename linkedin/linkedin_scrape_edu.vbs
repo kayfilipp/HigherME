@@ -122,7 +122,7 @@ do until profileURLs.atEndOfStream
         this_doc.close 
 
         'wait 
-        rndWaitTime = 3000 + cInt(Rnd()*5000)
+        rndWaitTime = 3000 + cInt(Rnd()*7000)
         wscript.echo "Waiting for ms: " + cStr(rndWaitTime)
         wscript.sleep(rndWaitTime)
 
