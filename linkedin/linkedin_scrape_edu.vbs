@@ -101,10 +101,10 @@ do until profileURLs.atEndOfStream
 
         'make sure we didn't get stopped along the way - otherwise, alert the user
         if this_html = prev_html then 
-            Set sapi=CreateObject("sapi.spvoice")
-            sapi.Speak "Warning - HTML across concurrent linked matches. Investigate further and press ok to continue."
-            msgbox "Press OK to Continue."
-            Set sapi = Nothing 
+            ' Set sapi=CreateObject("sapi.spvoice")
+            ' sapi.Speak "Warning - HTML across concurrent linked matches. Investigate further and press ok to continue."
+            ' msgbox "Press OK to Continue."
+            ' Set sapi = Nothing 
         end if 
 
         set this_doc = fso.OpenTextFile(this_user_dir,2,true)
