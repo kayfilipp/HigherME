@@ -119,7 +119,7 @@ degree_codes={
     ,60:"Fine Arts",61:"Medical and Health Sciences and Services",62:"Business",64:"History"
 }
 
-stem_degree_codes = [61,59,58,57,51,50,38,37,36,25,23,21]
+stem_degree_codes = [11,13,21,24,25,36,37,50,51,57,61]
 
 stem_detail_codes = [
     1100  # agriculture
