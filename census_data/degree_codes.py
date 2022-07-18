@@ -123,7 +123,7 @@ stem_degree_codes = [11,13,21,24,25,36,37,50,51,57,61]
 
 stem_detail_codes = [
     1100  # agriculture
-    ,6107 # nursing
+    #,6107 # nursing --> commented out 
     ,6108
     ,6202 # actuarial science 
 ] + list(range(
