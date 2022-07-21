@@ -1,7 +1,6 @@
 Code,Occupation,Occupation Types
 15-2011.00,Actuaries,"Research, Development, Design, and Practitioners"
 29-1291.00,Acupuncturists,"Research, Development, Design, and Practitioners"
-29-1141.01,Acute Care Nurses,"Research, Development, Design, and Practitioners"
 29-1141.02,Advanced Practice Psychiatric Nurses,"Research, Development, Design, and Practitioners"
 17-3021.00,Aerospace Engineering and Operations Technologists and Technicians,Technologists and Technicians
 17-2011.00,Aerospace Engineers,"Research, Development, Design, and Practitioners"
@@ -241,7 +240,6 @@ Code,Occupation,Occupation Types
 29-1224.00,Radiologists,"Research, Development, Design, and Practitioners"
 19-1031.02,Range Managers,"Research, Development, Design, and Practitioners"
 29-1125.00,Recreational Therapists,"Research, Development, Design, and Practitioners"
-29-1141.00,Registered Nurses,"Research, Development, Design, and Practitioners"
 19-2099.01,Remote Sensing Scientists and Technologists,"Research, Development, Design, and Practitioners"
 19-4099.03,Remote Sensing Technicians,Technologists and Technicians
 29-1126.00,Respiratory Therapists,"Research, Development, Design, and Practitioners"
@@ -251,10 +249,6 @@ Code,Occupation,Occupation Types
 41-4011.00,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",Sales
 19-3034.00,School Psychologists,"Research, Development, Design, and Practitioners"
 19-4061.00,Social Science Research Assistants,Technologists and Technicians
-25-1069.00,"Social Sciences Teachers, Postsecondary, All Other",Postsecondary Teaching
-19-3099.00,"Social Scientists and Related Workers, All Other","Research, Development, Design, and Practitioners"
-19-3041.00,Sociologists,"Research, Development, Design, and Practitioners"
-25-1067.00,"Sociology Teachers, Postsecondary",Postsecondary Teaching
 15-1252.00,Software Developers,"Research, Development, Design, and Practitioners"
 15-1253.00,Software Quality Assurance Analysts and Testers,"Research, Development, Design, and Practitioners"
 19-1013.00,Soil and Plant Scientists,"Research, Development, Design, and Practitioners"
