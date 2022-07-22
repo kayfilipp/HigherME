@@ -2,7 +2,7 @@
 A repository for the University of San Diego's HigherME Capstone project. This project seeks to provide insight on the mismatch between the supply and demand of nontraditional STEM hires and how companies can be better equipped to identify diverse talent that traditional recruiting cycles tend to overlook.
 
 ## Timeline and Separation of Tasks
-![image](https://user-images.githubusercontent.com/36943200/180357942-9077d124-96bc-4669-853f-0994fddf5a48.png)
+![image](https://user-images.githubusercontent.com/36943200/180357981-cec850c2-9a7b-4339-a578-1e980402fa08.png)
 
 
 ## Table of Contents 
