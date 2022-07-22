@@ -1,6 +1,29 @@
 #sources: https://learnmore.scholarsapply.org/wp-content/uploads/AWS_STEM_Majors.pdf
 #https://www.ice.gov/doclib/sevis/pdf/stemList2022.pdf
 
+#list of careers that we don't want to be included in STEM.
+career_blacklist = [
+    'nurse'
+    ,'nursing'
+    ,'social science'
+    ,'podiatrists'
+    ,'veterinar' #eliminates anything to do with vets
+    ,'medical and health services managers'
+    ,'therapists'
+    ,'dental hygienists'
+    ,'speechlanguage pathologists'
+    ,'medical records specialists'
+    ,'architects except landscape and naval'
+    ,'pharma' #eliminate anything to do with pharmacy
+    ,'medical'
+    ,'surgical'
+    ,'physician'
+    ,'dietitians'
+    ,'paramedics'
+    ,'chiropractors'
+    ,'optician'
+]
+
 fips = {
     1:"Alabama",2:"Alaska",4:"Arizona",5:"Arkansas",6:"California",8:"Colorado",9:"Connecticut"
     ,10:"Delaware",11:"District of Columbia",12:"Florida",13:"Georgia",15:"Hawaii",16:"Idaho"
