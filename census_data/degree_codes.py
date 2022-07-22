@@ -22,6 +22,7 @@ career_blacklist = [
     ,'paramedics'
     ,'chiropractors'
     ,'optician'
+    ,'radiologic technologists and technicians'
 ]
 
 fips = {
