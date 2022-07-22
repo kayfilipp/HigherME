@@ -111,7 +111,7 @@ detail_codes={
 ,6209: "Human Resources and Personnel Management"
 ,6210: "International Business"
 ,6211: "Hospitality Management"
-,6212: "Management Information Systems and Statistics"
+    ,6212: "Management Information Systems and Statistics"
 ,6299: "Miscellaneous Business and Medical Administration"
 ,6402: "History"
 ,6403: "United States History"
@@ -141,6 +141,7 @@ stem_detail_codes = [
     #,6107 # nursing --> commented out 
     ,6108
     ,6202 # actuarial science 
+    ,6212 # MIS and stats
 ] + list(range(
     1103, 1303+1 # Animal Sciences
 )) + list(range(
