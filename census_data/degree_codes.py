@@ -23,6 +23,7 @@ career_blacklist = [
     ,'chiropractors'
     ,'optician'
     ,'radiologic technologists and technicians'
+    ,'psych' #anything to do with psychology or psychiatry 
 ]
 
 fips = {
