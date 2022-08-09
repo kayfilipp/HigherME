@@ -4,6 +4,7 @@
 #list of careers that we don't want to be included in STEM.
 career_blacklist = [
     'nurse'
+    ,'acupuncturists'
     ,'nursing'
     ,'social science'
     ,'podiatrists'
@@ -24,6 +25,19 @@ career_blacklist = [
     ,'optician'
     ,'radiologic technologists and technicians'
     ,'psych' #anything to do with psychology or psychiatry 
+]
+
+#list of careers that aren't included in our stem occupations data, but we feel should be.
+career_whitelist = [
+    'other engineers'
+    ,'statistical assistants'
+    , 'electrical and electronics engineers'
+    , 'petroleum mining and geological engineers including mining safety engineers'
+    , 'biomedical and agricultural engineers'
+    , 'geoscientists and hydrologists except geographers'
+    , 'environmental science and geoscience technicians and nuclear technicians'
+    , 'other mathematical science occupations'
+    , 'chemists and materials scientists'
 ]
 
 fips = {
@@ -190,3 +204,11 @@ def is_stem_degree(degree_code, detail_code=0):
     if detail_code in stem_detail_codes:
         return 1
     return 0
+
+import re
+
+#standardize to lowercase for occupations
+def stdize(occ):
+    out = occ.lower()
+    out = re.sub("[^a-z\s]","",out)
+    return out 
