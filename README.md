@@ -49,7 +49,7 @@ Overall, we observe that an optimized Random Forest model with an roc-auc of 91%
 A cursory overview of our best-performing random forest model shows that features related to country of birth and racial category have salient explanatory power in determining STEM employment, alongside age, sex, the type of degree an individual has, and (to a lesser extent) their level of educational attainment.
 
 <br>
-![image](https://user-images.githubusercontent.com/36943200/184620642-cba6d80c-9105-4b6c-ac06-05f0b0b4337f.png)
+<img src="https://user-images.githubusercontent.com/36943200/184620642-cba6d80c-9105-4b6c-ac06-05f0b0b4337f.png">
 
 <br>
 
