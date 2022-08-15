@@ -175,8 +175,10 @@ degree_codes={
 ,60:"Fine Arts",61:"Medical and Health Sciences and Services",62:"Business",64:"History"
 }
 
+#hardcoded list of degree area codes that should count as STEM
 stem_degree_codes = [11,13,21,24,25,36,37,50,51,57,61]
 
+#hardcoded list of degree detail codes (DEGREED) that should count as STEM
 stem_detail_codes = [
     1100  # agriculture
     #,6107 # nursing --> commented out 
@@ -197,6 +199,7 @@ stem_detail_codes = [
     5000, 5102+1 # Physical Sciences
 ))
 
+# business logic for determining if a degree is STEM
 def is_stem_degree(degree_code, detail_code=0):
     
     #if the high-level degree description fits...
