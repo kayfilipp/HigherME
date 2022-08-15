@@ -45,6 +45,13 @@ Overall, we observe that an optimized Random Forest model with an roc-auc of 91%
 
 ![image](https://user-images.githubusercontent.com/36943200/184602328-fcf845cb-98af-42b4-95c0-39f915da3a29.png)
 
+**Feature Importance for Random Forest**
+A cursory overview of our best-performing random forest model shows that features related to country of birth and racial category have salient explanatory power in determining STEM employment, alongside age, sex, the type of degree an individual has, and (to a lesser extent) their level of educational attainment.
+
+<br>
+![image](https://user-images.githubusercontent.com/36943200/184620642-cba6d80c-9105-4b6c-ac06-05f0b0b4337f.png)
+
+<br>
 
 ### Streamlit Deployment
 To see the repo for our streamLit data, click <a href="https://github.com/kayfilipp/HigherMeStreamlitDemo">here</a>.
