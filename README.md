@@ -23,6 +23,8 @@ A repository for the University of San Diego's HigherME Capstone project. This p
     </ul>
   </li>
   <li><b>Traditional Career Path:</b> A graduate of an accredited college with a STEM degree that found job placement in 1-2 years from graduation.</li>
+  <li><b>STEM Occupation:</b> Any occupation that draws heavily on engineering, math, science, or technological disciplines. For the purposes of our research, we define STEM Occupations using ONet Data which can be located <a href="https://www.onetonline.org/find/stem?t=0">here</a>.</li>
+  <li><b>STEM Degree:</b> Any degree completed in an associate's, Bachelor's, Master's, or PhD program that draws heavily on scientific disciplines. Mappings for both specific degree names and their broader degree areas are defined in <b>degree_codes.py</b> for the census data analysis project.</li>
 </ol>
 
 ### Census Data Analysis
