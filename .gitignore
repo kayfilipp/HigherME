@@ -109,3 +109,7 @@ dist
 
 # checkpoints
 .ipynb_checkpoints/
+
+#pycache
+__pycache__/
+*.pyc

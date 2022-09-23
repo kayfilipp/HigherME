@@ -4,6 +4,7 @@
 #list of careers that we don't want to be included in STEM.
 career_blacklist = [
     'nurse'
+    ,'registered nurses'
     ,'acupuncturists'
     ,'nursing'
     ,'social science'
